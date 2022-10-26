@@ -8,7 +8,6 @@ namespace WebApi
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<ITodoRepository, TodoRepository>();
-
             return services;
         }
     }

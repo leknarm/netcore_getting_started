@@ -7,12 +7,6 @@ namespace WebApi.ViewModel
         public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
         {
             return Task.FromResult(HealthCheckResult.Healthy());
-            //return Task.FromResult(new HealthCheckDataTransformation()
-            //{
-            //    HostName = "aa",
-            //    Status = "s",
-            //    Timestamp = DateTime.Now
-            //});
         }
     }
 
