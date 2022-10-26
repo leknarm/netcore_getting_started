@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.Extensions.Options;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using WebApi.Services;
 using WebApi.ViewModel;
 using WebApi.ViewModel.Entities;
@@ -10,11 +10,11 @@ namespace WebApi.Repositories
 {
     public class TodoRepository : ITodoRepository
     {
-        private readonly SqlConnection _connection;
+        private readonly MySqlConnection _connection;
 
         public TodoRepository(IOptions<ConnectionStrings> connectionString)
         {
-            _connection = new SqlConnection(connectionString.Value.PrimaryDatabaseConnectionString);
+            _connection = new MySqlConnection(connectionString.Value.PrimaryDatabaseConnectionString);
         }
 
         public async Task Delete()
