@@ -1,17 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>1e9f8142-dc1c-48ec-8c6b-f4c9e5097a3a</UserSecretsId>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.123" />
-    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
-    <PackageReference Include="MySql.Data" Version="8.0.31" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Dapper" Version="2.0.123"/>
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78"/>
+    <PackageReference Include="MySql.Data" Version="8.0.31"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+    <PackageReference Include="Npgsql" Version="6.0.7"/>
   </ItemGroup>
-
 </Project>
